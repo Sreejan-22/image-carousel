@@ -4,7 +4,6 @@ const rightArrow = document.querySelector(".right-arrow");
 const carouselImg = document.querySelector(".carousel-img");
 const carouselNavigators = document.querySelector(".carousel-navigators");
 
-// carouselImg.setAttribute("src", imgArr[currentIndex]);
 leftArrow.style.stroke = "white";
 leftArrow.setAttribute("fill", "white");
 
@@ -30,6 +29,7 @@ function runAfterEveryImageChange(index) {
 rightArrow.addEventListener("click", (e) => {
   if (currentIndex < 3) {
     currentIndex += 1;
+    // carouselImg.style.transform = "translateX(100%)";
     runAfterEveryImageChange(currentIndex);
   }
 });

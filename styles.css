@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .heading {
@@ -20,17 +21,54 @@
   justify-content: center;
 }
 
+.carousel-img {
+  width: 90%;
+  height: 345px;
+  transition: transform 1s;
+}
+
 .left-arrow,
 .right-arrow {
   align-self: center;
-  margin: 16px;
+  margin: 0px 16px;
   cursor: pointer;
   stroke: black;
 }
 
+.filled-circle,
+.outline-circle {
+  cursor: pointer;
+}
+
 .carousel-navigators {
-  width: 64px;
+  width: 76px;
   display: flex;
   justify-content: space-between;
   margin: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .carousel-container {
+    width: 85%;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    margin: 0px 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-container {
+    width: 90%;
+  }
+
+  .carousel-img {
+    height: 210px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    margin: 0px 4px;
+  }
 }
