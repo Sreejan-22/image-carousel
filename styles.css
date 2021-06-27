@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.carousel-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-arrow,
+.right-arrow {
+  align-self: center;
+  margin: 16px;
+  cursor: pointer;
+  stroke: black;
+}
+
+.carousel-navigators {
+  width: 64px;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+}
