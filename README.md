@@ -1,3 +1,3 @@
 # Image Carousel
 
-### Tech Stack - HTML, CSS, Javascript
+Tech Stack - HTML, CSS, Javascript
